@@ -8,7 +8,17 @@
     display: none;
 }
 
+.add{
+    height: 160px;
+    border: 1px solid; 
+    border-radius: 10px;
+        overflow: hidden;
 
+
+}
+.add img{ 
+    width: 100%;
+}
     
 .opction{
     
@@ -61,4 +71,47 @@
 .selected {
     background-color: green;
     color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .contioner {
+        width: 95%;
+        padding: 5px;
+        margin-top: 20px !important;
+        border-radius: 8px;
+        background-size: cover;
+    }
+    .opction {
+        font-size: 16px;
+        padding: 6px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .question, .question-number {
+        padding: 10px;
+    }
+    .next-btn, .restart-btn {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contioner {
+        width: 100%;
+        padding: 2px;
+        margin-top: 10px !important;
+    }
+    .app {
+        font-size: 18px;
+    }
+    .opction {
+        font-size: 14px;
+        padding: 4px;
+    }
+    .next-btn, .restart-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
 }
